@@ -239,42 +239,149 @@ page2imganimation()
 
 
 
-var tl5 = gsap.timeline({scrollTrigger:{
+function page3animation(){
+  var tl5 = gsap.timeline({scrollTrigger:{
+    // markers:true,
+    scroller:".main",
+    trigger:".hero3",
+    start:"top 60%",
+    end:"top 30%",
+    scrub:3
+  }})
+  
+  
+  tl5.from(".hero3-left .hero3-img",{
+    x:-30,
+    opacity:0,
+    duration:1,
+    
+  })
+  
+  tl5.from(".hero3-right p",{
+    y:-30,
+    opacity:0,
+    duration:1,
+    
+  })
+  
+  tl5.from(".hero3-right h1",{
+    y:-30,
+    opacity:0,
+    duration:1,
+    
+  })
+  
+  tl5.from(".hero3-box-content .box",{
+    y:-30,
+    opacity:0,
+    duration:1,
+    stagger:0.7
+    
+  })
+}
+
+
+page3animation()
+
+
+
+function page4animation(){
+  var tl6 = gsap.timeline({scrollTrigger:{
+    // markers:true,
+    scroller:".main",
+    trigger:".hero4-heading",
+    scrub:4,
+    start:"top 80%",
+    end:"top 60%"
+  }})
+  
+  
+  tl6.from(".hero4-heading-left p",{
+    x:-30,
+    opacity:0,
+    duration:1,
+  })
+  
+  tl6.from(".hero4-heading-left h1",{
+    x:-30,
+    opacity:0,
+    duration:1,
+  })
+  
+  tl6.from(".hero4-heading-right p",{
+    x:30,
+    opacity:0,
+    duration:1,
+  })
+  
+  
+  tl6.from(".hero4-content .hero4-img1",{
+    y:30,
+    opacity:0,
+    duration:1,
+  })
+  
+  tl6.from(".hero4-content .hero4-img2",{
+    y:-30,
+    opacity:0,
+    duration:1,
+  })
+  
+  
+  tl6.from(".hero4-content .hero4-img3",{
+    y:30,
+    opacity:0,
+    duration:1,
+  })
+  
+  tl6.from(".hero4 button",{
+    y:30,
+    opacity:0,
+    duration:1,
+  })
+  
+}
+
+
+page4animation()
+
+
+var tl7 = gsap.timeline({scrollTrigger:{
   // markers:true,
   scroller:".main",
-  trigger:".hero3",
+  trigger:".hero5",
   start:"top 60%",
   end:"top 30%",
   scrub:3
 }})
 
 
-tl5.from(".hero3-left .hero3-img",{
-  x:-30,
+tl7.from(".hero5-heading p",{
+  y:-20,
   opacity:0,
   duration:1,
   
 })
 
-tl5.from(".hero3-right p",{
-  y:-30,
+tl7.from(".hero5-heading h1",{
+  y:-20,
   opacity:0,
   duration:1,
   
 })
 
-tl5.from(".hero3-right h1",{
-  y:-30,
+tl7.from(".hero5-imgs .hero5-img1",{
+  x:-20,
   opacity:0,
   duration:1,
   
 })
 
-tl5.from(".hero3-box-content .box",{
-  y:-30,
+
+tl7.from(".hero5-imgs .hero5-img2",{
+  x: 20,
   opacity:0,
   duration:1,
-  stagger:0.7
   
 })
 
